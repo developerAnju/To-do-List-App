@@ -14,6 +14,7 @@ export class CrudService {
 
   constructor(private http: HttpClient) { 
     this.serviceURL = "http://localhost:3000/tasks"
+    // to run the json server type command "json-server --watch db.json --port 3000"
   }
 
   addTask(task: Task) : Observable<Task> {
